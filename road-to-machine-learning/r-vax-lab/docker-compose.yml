@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/app
+      - ./data:/app/data
+      - ./.cursor:/app/.cursor
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    tty: true # コンテナを立ち上げっぱなしにする
+    stdin_open: true
+    # exec を使うためにコンテナを起動したままにする（省略時は CMD 実行後に終了）
+    command: ["sleep", "infinity"]

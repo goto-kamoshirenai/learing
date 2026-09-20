@@ -1,0 +1,8 @@
+opencv-python
+ezdxf
+numpy<2
+omegaconf
+scipy
+scikit-image
+kornia
+pytlsd

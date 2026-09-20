@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Docker
+.docker/
+
+# Data (入出力ファイルは除外、.gitkeepは追跡)
+data/**/*.pdf
+data/**/*.png
+data/**/*.jpg
+data/**/*.dxf
+!data/**/.gitkeep
+
+# Editor
+.vscode/
+.cursor/
