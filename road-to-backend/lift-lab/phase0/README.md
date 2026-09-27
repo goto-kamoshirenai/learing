@@ -48,7 +48,7 @@ Python は型ヒントを**実行時に一切チェックしない**ので、型
 
 ## 課題
 
-### ex01: ウォームアップ（`ex01_type_hints.py`）
+### [完了]ex01: ウォームアップ（`ex01_type_hints.py`）
 
 以前書いたコードを持ってきた。実行すると一応動くが、問題が 3 つある。
 
@@ -58,7 +58,7 @@ Python は型ヒントを**実行時に一切チェックしない**ので、型
 3. `uv run ruff check phase0/ex01_type_hints.py` で出る指摘の意味を調べて直す。
    続けて `uv run ruff format --diff phase0/ex01_type_hints.py` で、Python の書式の慣習（PEP 8）がどう違うかを見る
 
-### ex02: リターンを計算する（`ex02_returns.py`）
+### [ここから再開]ex02: リターンを計算する（`ex02_returns.py`）
 
 リスト、スライス、`zip`、内包表記、`None` の扱いを学ぶ。pandas を使わずに書く。
 
